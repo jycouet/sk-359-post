@@ -12,7 +12,7 @@
     const jsonGET = await resultGET.json();
     console.log(`jsonGET`, jsonGET);
 
-    // Not working from version 359
+    // Not working from version 359 👇
     // Error message: "Request with GET/HEAD method cannot have body."
     const resultPOST = await event.fetch("http://localhost:3000/api", {
       method: "POST",
